@@ -83,7 +83,7 @@
   
   /* General styles and layout */
   body {
-    background: #000 url("Page\Img\fondo.jpg");
+    background: #000 url("..\Img\fondo.jpg");
   }
   
   .portada {
