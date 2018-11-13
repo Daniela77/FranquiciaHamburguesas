@@ -7,20 +7,37 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css\Efecto2.5D.css">
+
     <link rel="stylesheet" href="Font/Painting_With_Chocolate.ttf">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="Font/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css\Efecto2.5D.css">   
 
   </head>
+    <!-- <header>
+    <div class="jumbotron jumbotron-fluid" id="banner">       
+
+      <img src="Img\hamburguesa desplegada.jpg" alt="Hamburguesa" class="hamburguesaImg">
+      <h2 class="nombreEmp" id="nombreEmp">Home Burguer</h2> 
+
+    </header>
+<header class="portada">
+     
+          <img src="Img\hamburguesa desplegada.jpg" alt="Hamburguesa" class="hamburguesaImg">
+          <h2 class="nombreEmp" id="nombreEmp">Home Burguer</h2>
+    
+  </header> -->
   <body id="page-top">
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">HomeBurguer</a>
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">HomeBurguer
+              <img src="Img/LogoFinal.png" alt="LogoHB" class="logo" >
+          </a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
@@ -44,13 +61,127 @@
           </div>
         </div>
       </nav>
-    <div class="portada">
-          <img src="Img\hamburguesa desplegada.jpg" alt="Hamburguesa" class="hamburguesaImg">
-          <h2 class="nombreEmp" id="nombreEmp">Home Burguer</h2>
-    </div>
+
+      <!-- Portada -->
+      <header class="portada ">
+          <div class="container">
+              <img src="Img\hamburguesa desplegada.jpg" alt="Hamburguesa" class="hamburguesaImg">
+              <h2 class="nombreEmp" id="nombreEmp">Home Burguer</h2>
+          </div>
+      </header>
+
+    <!-- Promos -->
+      <section class="bg-light" id="promos">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12  parallax"></div> 
+          </div>
+        </div>
+      </section>
+    
+
+    <!-- Productos -->
+    <section class="bg-light" id="producto">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Productos</h2>
+              <h3 class="section-subheading text-muted">Los mejores producto y la mejor calidad.</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 producto-item">
+              <a class="producto-link" data-toggle="modal" href="#productoModal1">
+                <div class="producto-hover">
+                  <div class="producto-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="Img/burgerTorre.jpg" alt="">
+              </a>
+              <div class="producto-caption">
+                <h4>Gran HomeBurguer</h4>
+                <p class="text-muted">Hambuerguesa sextuple con queso cheddar</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 producto-item">
+              <a class="producto-link" data-toggle="modal" href="#productoModal2">
+                <div class="producto-hover">
+                  <div class="producto-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="Img/burger-saludable.jpg" alt="">
+              </a>
+              <div class="producto-caption">
+                <h4>Hamburguesa de Pollo</h4>
+                <p class="text-muted">Hamburguesa de pollo con variedad de vegetales</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 producto-item">
+              <a class="producto-link" data-toggle="modal" href="#productoModal3">
+                <div class="producto-hover">
+                  <div class="producto-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="Img/hamburger-capresse.jpg" alt="">
+              </a>
+              <div class="producto-caption">
+                <h4>Hamburguesa Capresse</h4>
+                <p class="text-muted">Hamburguesa de carne con albahaca y Tomates cherry</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 producto-item">
+              <a class="producto-link" data-toggle="modal" href="#productoModal4">
+                <div class="producto-hover">
+                  <div class="producto-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="Img/burger-cebolla.jpg" alt="">
+              </a>
+              <div class="producto-caption">
+                <h4>Hamburguesa con cebolla</h4>
+                <p class="text-muted">Hamburguesa de cebolla con pan integral</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 producto-item">
+              <a class="producto-link" data-toggle="modal" href="#productoModal5">
+                <div class="producto-hover">
+                  <div class="producto-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="Img/Burger-HD.jpg" alt="">
+              </a>
+              <div class="producto-caption">
+                <h4>Burguer HD</h4>
+                <p class="text-muted">Hamburguesa super completa</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 producto-item">
+              <a class="producto-link" data-toggle="modal" href="#productoModal6">
+                <div class="producto-hover">
+                  <div class="producto-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="Img/burguer-doble.png" alt="">
+              </a>
+              <div class="producto-caption">
+                <h4>Max Burguer</h4>
+                <p class="text-muted">Hamburguesa doble</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
 
     <!-- Optional JavaScript -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script>src="Js/jquery.easing.min.js"</script> 
     <script src="Js/bootstrap.min.js"></script> 
     <script src="Js\Efecto2.5D.js" ></script>
     

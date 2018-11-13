@@ -1,17 +1,17 @@
 /* Animation properties */
-.inicio {
+ header .inicio {
     animation: inicio 10s ease-out infinite;
-  }
-  .hamburguesaImg {
+  } 
+ header .hamburguesaImg {
     animation: hamburguesaImg 10s ease-out infinite;
   }
-  .nombreEmp span {
+  header .nombreEmp span {
     animation: spin-letters 10s linear infinite;
   }
-  .nombreEmp {
+   header .nombreEmp {
     animation: move-nombreEmp 10s linear infinite;
   }
-  
+ 
   /* Keyframes */
   @keyframes inicio {
     0% {
@@ -45,7 +45,7 @@
     }
     100% {
       opacity: 0;
-      transform: translateZ(-500em);
+      transform: translateZ(-100em);
     }
   }
   
@@ -75,47 +75,39 @@
     }
   }
   
-  /* Make the 3D work on the container */
-  /* .portada {
-    perspective: 800px;
-    transform-style: preserve3d;
-  } */
-  
-  /* General styles and layout */
-  body {
-    background: #000 url("..\Img\fondo.jpg");
-  }
-  
-  .portada {
+ header .portada {
     height: 17em;
     left: 50%;
-    position: absolute;
+    position: fixed;
     top: 53%;
     transform: translate(-50%, -50%);
     width: 34em;
-  }
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: contain;
+  }*/
   
-  .nombreEmp span {
-    display: inline-block;
-  }
+header .nombreEmp span {
+    display:block }
   
-  img {
+  /* #page-top > header img {
     width: 100%;
   }
-  
-  .inicio, .hamburguesaImg, .nombreEmp {
+   */
+header .inicio, .hamburguesaImg, .nombreEmp {
     position: absolute;
   }
   
-  .inicio {
-    top: -0.75em;
+  header .inicio {
+    top: 0.75em;
   }
   
-  .hamburguesaImg {
+header .hamburguesaImg {
     bottom: -0.5em;
   }
   
-  .nombreEmp {
+header .nombreEmp {
     color: #fff;
     font-family: "Painting_With_Chocolate", Lato;
     font-size: 2.25em;
@@ -130,13 +122,13 @@
   /*** Media queries for adjusting to different screen sizes ***/
   
   @media only screen and (max-width: 600px) {
-    .portada {
+   header .portada {
       font-size: 10px;
     }
   }
   
   @media only screen and (max-width: 480px) {
-    .portada {
+   header .portada {
       font-size: 7px;
     }
-  }
+  } 
