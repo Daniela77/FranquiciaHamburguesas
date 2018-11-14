@@ -8,29 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="Font/Painting_With_Chocolate.ttf">
+    <link rel="stylesheet" href="Font/Painting_With_Chocolate.ttf" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="Font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="Font/fontawesome/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css\Efecto2.5D.css">   
-
+    <link rel="stylesheet" href="css/rotate.css">
+    <link rel="stylesheet" href="css\animaciones.css">   
   </head>
-    <!-- <header>
-    <div class="jumbotron jumbotron-fluid" id="banner">       
 
-      <img src="Img\hamburguesa desplegada.jpg" alt="Hamburguesa" class="hamburguesaImg">
-      <h2 class="nombreEmp" id="nombreEmp">Home Burguer</h2> 
-
-    </header>
-<header class="portada">
-     
-          <img src="Img\hamburguesa desplegada.jpg" alt="Hamburguesa" class="hamburguesaImg">
-          <h2 class="nombreEmp" id="nombreEmp">Home Burguer</h2>
-    
-  </header> -->
   <body id="page-top">
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -49,7 +37,7 @@
                 <a class="nav-link js-scroll-trigger" href="#promos">Promos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#productos">Productos</a>
+                <a class="nav-link js-scroll-trigger" href="#producto">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#locales">Locales</a>
@@ -62,19 +50,47 @@
         </div>
       </nav>
 
-      <!-- Portada -->
-      <header class="portada ">
-          <div class="container">
-              <img src="Img\hamburguesa desplegada.jpg" alt="Hamburguesa" class="hamburguesaImg">
-              <h2 class="nombreEmp" id="nombreEmp">Home Burguer</h2>
+          <!-- Header -->
+    <header class="masthead">
+        <div class="container container-fluid">
+          <div class="intro-text">
+            <!-- <div class="intro-lead-in">Home Burguer</div> -->
+            <div class="caidaHamb img-fluid"></div>
+            <div class="caidaVaso img-fluid"></div>
+            <div class="caidaPapas img-fluid"></div>
+            <h6 class="intro-heading nombreEmp" id="nombreEmp" >Home Burguer</h6>
           </div>
+        </div>
       </header>
 
-    <!-- Promos -->
-      <section class="bg-light" id="promos">
-        <div class="container">
+   <!-- Promos -->
+      <section id="promos">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12  parallax"></div> 
+                  <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Promos</h2>
+                    <h3 class="section-subheading text-muted">Los mejores producto y la mejor calidad a un precio increible.</h3>
+                  </div>
+            </div>
+            <div class="col-lg-12 parallax "> 
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+       
+      </section>
+    
+
+      <section >
+        <div class="container-fluid">
+          <div class="row">
+                  <div class="col-lg-12 text-center"></div>
           </div>
         </div>
       </section>
@@ -91,12 +107,7 @@
           </div>
           <div class="row">
             <div class="col-md-4 col-sm-6 producto-item">
-              <a class="producto-link" data-toggle="modal" href="#productoModal1">
-                <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+              <a class="producto-link">
                 <img class="img-fluid" src="Img/burgerTorre.jpg" alt="">
               </a>
               <div class="producto-caption">
@@ -105,12 +116,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 producto-item">
-              <a class="producto-link" data-toggle="modal" href="#productoModal2">
-                <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+              <a class="producto-link">
                 <img class="img-fluid" src="Img/burger-saludable.jpg" alt="">
               </a>
               <div class="producto-caption">
@@ -119,12 +125,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 producto-item">
-              <a class="producto-link" data-toggle="modal" href="#productoModal3">
-                <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+              <a class="producto-link">
                 <img class="img-fluid" src="Img/hamburger-capresse.jpg" alt="">
               </a>
               <div class="producto-caption">
@@ -133,12 +134,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 producto-item">
-              <a class="producto-link" data-toggle="modal" href="#productoModal4">
-                <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+              <a class="producto-link">              
                 <img class="img-fluid" src="Img/burger-cebolla.jpg" alt="">
               </a>
               <div class="producto-caption">
@@ -147,12 +143,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 producto-item">
-              <a class="producto-link" data-toggle="modal" href="#productoModal5">
-                <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+              <a class="producto-link">
                 <img class="img-fluid" src="Img/Burger-HD.jpg" alt="">
               </a>
               <div class="producto-caption">
@@ -161,12 +152,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 producto-item">
-              <a class="producto-link" data-toggle="modal" href="#productoModal6">
-                <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+              <a class="producto-link">
                 <img class="img-fluid" src="Img/burguer-doble.png" alt="">
               </a>
               <div class="producto-caption">
@@ -177,13 +163,92 @@
           </div>
         </div>
       </section>
+
+      <!-- Contacto -->
+    <section id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contacto</h2>
+            <h3 class="section-subheading text-muted">Para obtener mayor informacion contactate con nosotros</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactoForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-3">
+                </div>
+                    <div class="col-md-6">
+                  <div class="form-group"> <p class="section-subheading text-muted">Nombre</p>
+                    <input class="form-control" id="name" type="text" placeholder="Por favor ingrese su nombre." required="required" data-validation-required-message="Por favor ingrese su nombre.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group"><p class="section-subheading text-muted">Email</p>
+                    <input class="form-control" id="email" type="email" placeholder="Por favor ingrese su Email." required="required" data-validation-required-message="Por favor ingrese su email.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group"><p class="section-subheading text-muted">Mensaje</p>
+                      <textarea class="form-control" id="message" placeholder="Por favor dejenos su mensaje." required="required" data-validation-required-message="Por favor dejenos su mensaje."></textarea>
+                      <p class="help-block text-danger"></p>
+                </div>
+        
+                </div>
+                   <div class="col-md-3">
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-lg text-md-center" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; HomeBurguer 2018</span>
+            </div>
+          </div>
+        </div>
+      </footer>
   
 
     <!-- Optional JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script>src="Js/jquery.easing.min.js"</script> 
+   <script src="Js/jquery.easing.min.js"></script> 
     <script src="Js/bootstrap.min.js"></script> 
-    <script src="Js\Efecto2.5D.js" ></script>
+    <script src="Js\animaciones.js" ></script>
+    <!-- <script src="Js\rotate.js" ></script> -->
     
     
   </body>

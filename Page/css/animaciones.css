@@ -1,0 +1,178 @@
+  /* Keyframes */
+
+  @keyframes spin-letters {
+    0%, 10% {
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+    30% {
+      opacity: 1;
+    }
+    70%, 86% {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+    95%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes move-nombreEmp {
+    0% {
+      transform: translateZ(5em);
+    }
+    100% {
+      transform: translateZ(0);
+    }
+  }
+ 
+.nombreEmp span {
+    display:inline-block;
+    animation: spin-letters 10s linear infinite;
+  } 
+  
+ .nombreEmp {
+    color: #fff;
+    font-family: "Painting With Chocolate(2)", Lato;
+    font-size: 2.25em;
+    left: -2em;
+    letter-spacing: 0.2em;
+    right: -2em;
+    text-align: center;
+    text-transform: uppercase;
+    text-orientation: sideways-right;
+    top: 29%;
+    animation: move-nombreEmp 10s linear infinite;
+      z-index: 10000100;
+  }
+
+  @keyframes caida{
+
+    0%{
+      transform: translateY(-200px);
+    }
+      20%{
+        transform: translateY(-175px);
+      }
+      40% {
+        transform: translateY(-150px);
+      }
+  
+      60%{
+        transform: translateY(-125px);
+      }
+      80%{
+        transform: translateY(-100px);
+      }
+      100%{
+        transform: translateY(-75px);
+      }
+    }
+  
+    @keyframes headerBg {
+      0% {
+      background-image: url("../Img/sliderpromo1.png");
+    }
+      15% {
+      background-image: url("../Img/sliderpromo1.png");
+    }
+      30% {
+      background-image: url("../Img/sliderpromo2.png");
+    }
+      45% {
+      background-image: url("../Img/sliderpromo2.png");
+    }
+      60% {
+      background-image: url("../Img/sliderpromo3.png");
+    }
+      85% {
+      background-image: url("../Img/sliderpromo3.png");
+        }
+      100% {
+      background-image: url("../Img/sliderpromo4.png");
+        }    
+    }
+  
+  /*** Media queries for adjusting to different screen sizes ***/
+  
+  /* @media only screen and (max-width: 600px) {
+   header .nombreEmp{
+      font-size: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+   header .nombreEmp {
+      font-size: 7px;
+    }
+  } 
+  */
+   div.caidaHamb {
+      position: absolute;
+      width:300px;
+      height: 300px;
+      animation: 1s caida 1 linear; 
+      top:200px;
+      left: 40px;
+      z-index: 1000000;
+      text-align: center;
+      color: white;
+      background: url("../Img/HAMBURGUESASOLA.png")no-repeat;
+      background-attachment: scroll;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    div.caidaVaso {
+      position: absolute;
+      width:200px;
+      height:200px;
+      animation: 3s caida 1 linear; 
+      top:200px;
+      left: 160px;
+      z-index: 999990;
+      text-align: center;
+      color: white;
+      background: url("../Img/vasococa.png")no-repeat;
+      background-attachment: scroll;
+      background-position: center center;
+      background-size: cover;
+      }
+
+    div.caidaPapas {
+      position: absolute;
+      width:200px;
+      height:200px;
+      animation: 5s caida 1 linear; 
+      top:200px;
+      left: 10px;
+      z-index: 999990;
+      text-align: center;
+      color: white;
+      background: url("../Img/papasFinal.png")no-repeat;
+      background-attachment: scroll;
+      background-position: center center;
+      background-size: cover;
+      }
+    
+  .parallax { 
+    height: 550px;
+    position: absolute;
+    animation: headerBg 12s infinite;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+      
+    /* Create the parallax scrolling effect */
+    background-attachment: absolute;
+    /* background-position: right top; */
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+  }
+
+ 
+  .parallax:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px black;
+  }
+

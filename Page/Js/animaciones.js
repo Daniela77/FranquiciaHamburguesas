@@ -1,4 +1,4 @@
-var nombreEmp = document.getElementById('nombreEmp');  	// encuentra H2
+var nombreEmp = document.getElementById('nombreEmp');  	// encuentra nombre
 nombreEmpText = nombreEmp.innerHTML;										// toma el contenido de H2
 nombreEmpArr = nombreEmpText.split('');									// divide el contenido en la matriz
 nombreEmp.innerHTML = '';														// vacia el contenido actual
