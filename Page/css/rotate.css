@@ -1,0 +1,52 @@
+ #info .page-content {
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    margin-top: -30px;
+  }
+  
+  #info #circulo {
+    position: absolute;
+    margin-left: -200px;
+    left: 80%;
+  }
+
+  div.logo {
+    position: absolute;
+    width:100px;
+    height:100px;
+    animation: rotatePositive 30s infinite linear;
+    top:270px;
+    left: 1125px;
+    z-index: 999990;
+    text-align: center;
+    color: white;
+    background: url("../Img/LogoFinal.png")no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    }
+
+    @keyframes rotatePositive {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+  
+    #info #circulo2{
+        position: absolute;
+        top: -164px;
+        left: 35px;
+        animation: rotateNegative 65s infinite linear;
+    }
+    
+    @keyframes rotateNegative {
+        100% { -webkit-transform: rotate(-360deg); }
+        0% { -webkit-transform: rotate(-1deg); }
+    }
+  
+    
+  
+    @keyframes rotateNegative {
+        100% { transform: rotate(-360deg); }
+        0% { transform: rotate(-1deg); }
+    }

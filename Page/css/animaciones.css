@@ -43,7 +43,7 @@
     text-orientation: sideways-right;
     top: 29%;
     animation: move-nombreEmp 10s linear infinite;
-      z-index: 10000100;
+    z-index: 10000100;
   }
 
   @keyframes caida{
